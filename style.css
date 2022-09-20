@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-screen__logo {
+  padding-top: 5vh;
+  background: #9bc6ff url("./img/logo.jpg") no-repeat center;
+  background-size: cover;
+  height: 30vh;
+  width: 486px;
+}
+
+.login-screen__title {
+  font-size: 6vh;
+  font-weight: 600;
+  max-width: 70vw;
+  text-align: center;
+  color: #202161;
+}
+
+.login-screen__login-block {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.login-screen__input {
+  height: 8vh;
+  width: 40vw;
+  border-radius: 4vh;
+  border: 1px solid #202161;
+  box-sizing: border-box;
+  padding-left: 3vh;
+  font-size: 3vh;
+}
+.login-screen__input:focus {
+  outline: 2px solid #202161;
+}
+.login-screen__input::placeholder {
+  color: #9ebcec;
+}
+
+.button {
+  height: 8vh;
+  width: 40vw;
+  border-radius: 4vh;
+  border: none;
+  font-size: 3vh;
+  background-color: #1D429A;
+  color: #fff;
+  transition: transform 0.2s;
+}
+.button:hover {
+  background-color: #3368e7;
+}
+.button:active {
+  transform: scale(0.97);
+}
+
+.warning-message {
+  color: #E10101;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.lobby-screen__lobby-logo, .play-screen__rival-name {
+  height: 20vh;
+  background: #1D429A url("img/lobby-morfeus.jpg") no-repeat center;
+  background-size: cover;
+  min-width: 520px;
+  color: #fff;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  padding-left: 10vh;
+}
+
+.lobby-screen__player-list {
+  overflow-y: scroll;
+  height: 40vh;
+}
+
+.lobby-screen__player, .waiting-for-start {
+  color: #1D429A;
+  font-size: 6vh;
+  font-weight: 600;
+}
+
+.waiting-for-start, .play-screen__buttons-block, .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+}
+
+.waiting-for-start {
+  text-align: center;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */
